@@ -4,7 +4,7 @@ This repository contains a C++ program to mine Ethereum contract addresses for t
 
 ## Features
 
-- Generates **1000 random salts** to compute Ethereum addresses.
+- Generates **1000000 random salts** to compute Ethereum addresses.
 - Scores addresses based on the **Uniswap v4 scoring rules**:
   - 10 points for each leading 0 nibble.
   - 40 points if the address starts with "4444".
