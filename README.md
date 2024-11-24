@@ -68,8 +68,7 @@ This will create an executable file named `address_miner`.
 
 Run the program:
 
-```
-    bash
+```bash
     ./address_miner
 ```
 
