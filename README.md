@@ -60,6 +60,7 @@ cd uniswap_v4_address_miner
 
 ```bash
     g++ -std=c++11 -o address_miner address_miner.cpp -lcrypto++ -lpthread
+```
 
 This will create an executable file named `address_miner`.
 
@@ -69,7 +70,7 @@ Run the program:
 
 ```bash
     ./address_miner
-
+```
 The program will:
 
 Generate 1,000,000 random Ethereum addresses.
