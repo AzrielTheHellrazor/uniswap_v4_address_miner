@@ -71,6 +71,7 @@ Run the program:
 ```
 
 The program will:
+
 Generate 1,000,000 random Ethereum addresses.
 Score the addresses based on the challenge rules.
 Sort the results by score in descending order.
