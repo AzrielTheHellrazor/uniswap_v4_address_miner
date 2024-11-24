@@ -58,7 +58,7 @@ cd uniswap_v4_address_miner
 
     Compile the program using:
 
-````bash
+```bash
     g++ -std=c++11 -o address_miner address_miner.cpp -lcrypto++ -lpthread
 
 This will create an executable file named `address_miner`.
@@ -69,7 +69,6 @@ Run the program:
 
 ```bash
     ./address_miner
-````
 
 The program will:
 
@@ -77,3 +76,5 @@ Generate 1,000,000 random Ethereum addresses.
 Score the addresses based on the challenge rules.
 Sort the results by score in descending order.
 Save the results to a file named uniswap_v4_addresses_sorted.txt on your Desktop.
+
+
