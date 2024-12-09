@@ -4,7 +4,7 @@ This repository contains a C++ program to mine Ethereum contract addresses for t
 
 ## Features
 
-- Generates **1000 random salts** to compute Ethereum addresses.
+- Generates **1000000 random salts** to compute Ethereum addresses.
 - Scores addresses based on the **Uniswap v4 scoring rules**:
   - 10 points for each leading 0 nibble.
   - 40 points if the address starts with "4444".
@@ -35,6 +35,46 @@ Before you begin, ensure you have the following installed:
 Open your terminal and clone the repository:
 
 ```bash
-git clone https://github.com/your-username/UniswapV4AddressMiner.git
-cd UniswapV4AddressMiner
+git clone https://github.com/AzrielTheHellrazor/uniswap_v4_address_miner.git
+cd uniswap_v4_address_miner
 ```
+
+### Step 2: Install Dependencies
+
+1. On **Ubuntu/WSL**, run:
+
+   ```bash
+   sudo apt update
+   sudo apt install build-essential libcrypto++-dev
+
+   ```
+
+2. Verify the Crypto++ installation:
+   ```bash
+   dpkg -l | grep crypto++
+   ```
+
+### Step 3: Compile the Program
+
+    Compile the program using:
+
+```bash
+g++ -std=c++11 -o address_miner address_miner.cpp -lcrypto++ -lpthread
+```
+
+This will create an executable file named `address_miner`.
+
+### Step 4: Run the Program
+
+Run the program:
+
+```bash
+./address_miner
+```
+The program will:
+
+Generate 1,000,000 random Ethereum addresses.
+Score the addresses based on the challenge rules.
+Sort the results by score in descending order.
+Save the results to a file named uniswap_v4_addresses_sorted.txt on your Desktop.
+
